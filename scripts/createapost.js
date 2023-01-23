@@ -113,7 +113,7 @@ function getPosts() {
         headers: myHeaders,
         redirect: 'follow'
     };
-    // Replace this with the correct url of your API endpoint
+    // Fetch API for all post
     fetch("https://microbloglite.herokuapp.com/api/posts?limit=5&offset=0", requestOptions)
         .then(response => response.json())
         .then(data => {
